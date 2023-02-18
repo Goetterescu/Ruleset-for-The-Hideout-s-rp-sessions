@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/general.css">
+        <title>Rules & Guidelines</title>
+
+        <script>
+            function choice(a) {
+                b = a.parentElement.querySelector('b').innerText;
+                b = b.toLowerCase();
+                b = b.slice(0, b.length - 1);
+                c = a.innerText;
+                c = c.toLowerCase();
+                document.querySelector("iframe#rules").setAttribute("src", b + "/" + c + ".html");
+                //console.log(b + "\n" + c);
+            };
+        </script>
+    </head>
+
+    <body>
+        <h1>Rules and Guidelines of The Hideout</h1>
+        <h2>Index</h2>
+        <div id="index">
+            <ul><b>For everyone:</b>
+                <li>General & Community Rules</li>
+                <li>Discord Server Rules</li>
+            </ul>
+            <ul><b>Game server:</b>
+                <li>Roleplaying Guideline</li>
+                <li>Game Server Rules</li>
+                <li>Company Regulation</li>
+                <ul><b>Vehicle control:</b>
+                    <li>Traffic Laws</li>
+                    <li>Vehicle Condition Regulation</li>
+                </ul>
+                <ul><b>Job specific roleplaying:</b>
+                    <li>Emergency Services Guideline</li>
+                    <li>Public Transportations Guideline</li>
+                    <li>Truckers Guideline</li>
+                </ul>
+            </ul>
+        </div>
+        <hr>
+        <iframe id="rules" src="placeholder.html" style="height: 90vh;width: 80vw;margin: auto;display: block;"></iframe>
+        <hr>
+        <script>
+            let d = document.querySelectorAll("div#index li");
+            for (let index = 0; index < d.length; index++) {
+                d[index].addEventListener("click", function() {choice(this);});
+            };
+        </script>
+    </body>
+</html>

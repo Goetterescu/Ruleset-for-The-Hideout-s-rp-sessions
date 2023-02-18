@@ -1,0 +1,27 @@
+ul {
+    margin: 1vw;
+}
+div#index li:hover {
+    background-color: gray;
+    cursor: help;
+}
+body {
+    background-color: aqua;
+    font-size: 1.2em;
+}
+
+#center {
+    display: block;
+    margin: auto;
+}
+#center-text {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0.1vw 0.1vw gray;
+    font-size: 3em;
+}
+
