@@ -2,3 +2,6 @@ body {
     font-size: x-large;
     font-family: 'Courier New', Courier, monospace;
 }
+li {
+    padding: 0.4vh;
+}
