@@ -1,9 +1,26 @@
 <link rel="stylesheet" href="../../styles/rules.css">
+<script>
+    const allowed = [
+        "FordCrownViccruiser.truck","FordCrownVicunmarked.truck","E36Polizei.truck","burnsidepickup_police.truck","burnsidepolice.truck","726fUID-dodgepolice.truck",
+        "FordTaunusPolizei.truck","gavrilomegaDET2.truck","ebe2UID-Lego_police.truck","3252UID-lexuspolice.truck","PeelP50Police.truck","PeelP50Police2.truck","magnum.truck",
+        "57611UIDsprinter-si-police.truck","b9988UID-CarTrailerTarp.load"
+        ];
+    function show_allowed() {
+        let text = "<ul>";
+        for (let i = 0; i < allowed.length; i++) {
+          text += "<li>" + allowed[i] + "</li>";
+        }
+        text += "</ul>";
+
+        let newWin = window.open("", "", "width=450,height=400");
+        newWin.document.write(text);
+    }
+</script>
 <h1>Police Guideline</h1>
 <li>
     §1<br>
     Vehicles of the Police are only considered as such if they're meeting 
-    the following requirements.
+    the following requirements. Only then, they can be used for the job.
 </li>
 <ul>
     <li>
@@ -12,7 +29,7 @@
     </li>
     <li>
         2<br>
-        The vehicle or trailer has to approved by the server staff. Ask them if you are unsure, but most cars that have "police" in their name are allowed.
+        The vehicle or trailer has to approved by the server staff. <a onclick="show_allowed();" href="">Here</a> you can view the list of allowed police vehicles and trailers.
     </li>
     <li>
         3<br>
@@ -32,4 +49,9 @@
     All legal actions have to be reported to the active chief of the department and later approved. The violation system has not been created, yet - so the active chief can request violation 
     points to be charged on players if needed. Server staff will have the last word in that case. Chiefs can also create their own systems for violation points and fines, this will need a final 
     approval from server staff as well.
+</li>
+<li>
+    §5<br>
+    Police officers need to keep an <i>realistic radius</i> to the suspect whenever they are collection evidence for an infraction. You can not spot a speeding car from 2 kilometers and around three 
+    corners, keep it real.
 </li>
