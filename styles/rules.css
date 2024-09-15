@@ -3,5 +3,18 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 li {
-    padding: 0.4vh;
+    padding: 0.5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+li:nth-child(odd) {
+    background-color: beige;
+}
+li:nth-child(even) {
+    background-color: gray;
+}
+
+li.example:hover {
+    cursor: help;
 }
