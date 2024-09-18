@@ -3,5 +3,30 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 li {
-    padding: 0.4vh;
+    padding: 0.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
+
+li:nth-child(odd) {
+    background-color: beige;
+}
+li:nth-child(even) {
+    background-color: gray;
+}
+
+li.example:hover {
+    cursor: help;
+}
+
+div#example-div {
+    background-color: black;
+    border: thick solid red;
+}
+
+
+pre.example-box {
+ color: cyan;
+}
+
+
